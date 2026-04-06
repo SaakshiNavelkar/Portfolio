@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IoT Based Water Management Solution</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TITLE */
+.project-title {
+    text-align: center;
+    font-size: 40px;
+    color: #ff4d00;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(255,77,0,0.6);
+}
+
+/* SECTION HEADINGS */
+.section-heading {
+    color: #ff4d00;
+    font-size: 22px;
+    margin: 30px 0 15px;
+    text-shadow: 0 0 6px rgba(255,77,0,0.5);
+}
+
+/* TEXT */
+.text {
+    color: #ccc;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* TECHNOLOGY TAGS */
+.tech-section {
+    margin-top: 20px;
+}
+
+.tech-category {
+    margin-bottom: 15px;
+}
+
+.tech-category h4 {
+    margin-bottom: 10px;
+    color: #ff4d00;
+}
+
+.tags span {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ff4d00;
+    font-size: 14px;
+}
+
+/* SNAPSHOT (CENTER IMAGE) */
+.snapshot {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.snapshot img {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    box-shadow: 0 0 20px rgba(255,77,0,0.35);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        padding: 25px;
+    }
+
+    .project-title {
+        font-size: 28px;
+    }
+
+    .snapshot img {
+        width: 100%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- TITLE -->
+<h1 class="project-title">IoT Based Water Management Solution</h1>
+
+<!-- OVERVIEW -->
+<h2 class="section-heading">Overview</h2>
+<p class="text">
+This project was developed to automate and manage water distribution between multiple tanks in an efficient way. It uses IoT technology to monitor water levels and control the flow of water between tanks without manual effort.
+
+The system continuously tracks the water level in different tanks such as the main tank, water tower, and home tank. Based on the water levels, it automatically manages the transfer of water, helping in better utilization and reducing wastage.
+</p>
+
+<!-- TECHNOLOGIES -->
+<h2 class="section-heading">Tech Stack & Tools:</h2>
+
+<div class="tech-section">
+
+    <div class="tech-category">
+        <h4>Hardware:</h4>
+        <div class="tags">
+            <span>ESP32</span>
+            <span>Ultrasonic Sensors</span>
+            <span>Relay Modules</span>
+            <span>Submersible Water Pumps</span>
+            <span>I2C LCD Display</span>
+            <span>PCB Board</span>
+            <span>Power Supply</span>
+        </div>
+    </div>
+
+    <div class="tech-category">
+        <h4>Technologies:</h4>
+        <div class="tags">
+            <span>Arduino IDE</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- PROJECT DETAILS -->
+<h2 class="section-heading">Project Details</h2>
+<p class="text">
+In this project, ultrasonic sensors are used to measure the water level in each tank. These sensors send distance values to the ESP32, which calculates the water level in percentage. Based on these readings, the system decides how water should be distributed between the tanks.
+
+When the water level in one tank is low and another tank has sufficient water, the system automatically turns on the motor to transfer water. This process happens without manual intervention, making the system efficient and easy to use.
+
+The ESP32 controls relay modules, which act as switches to turn the water pumps ON and OFF. These pumps are used to move water between tanks through pipes.
+
+The system also sends water level data and pump status to Google Sheets. This allows the data to be stored and viewed easily, making monitoring simple and accessible.
+
+An LCD display is used to show the current water levels and system status in real time, which helps in quick understanding of the system’s operation.
+
+This project shows how simple components can be combined to automate water management and improve efficiency in daily usage.
+</p>
+
+<!-- SNAPSHOT -->
+<h2 class="section-heading">Project Highlights</h2>
+
+<div class="snapshot">
+    <img src="Project/Proj2_Image.jpeg" alt="Water Management Project">
+</div>
+
+</div>
+
+</body>
+</html>

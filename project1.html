@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Energy Meter</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px;
+}
+
+/* CONTAINER (FIX FOR GAP) */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TITLE */
+.project-title {
+    text-align: center;
+    font-size: 40px;
+    color: #ff4d00;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(255,77,0,0.6);
+}
+
+/* SECTION HEADINGS */
+.section-heading {
+    color: #ff4d00;
+    font-size: 22px;
+    margin: 30px 0 15px;
+    text-shadow: 0 0 6px rgba(255,77,0,0.5);
+}
+
+/* TEXT */
+.text {
+    color: #ccc;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* TECHNOLOGY TAGS */
+.tech-section {
+    margin-top: 20px;
+}
+
+.tech-category {
+    margin-bottom: 15px;
+}
+
+.tech-category h4 {
+    margin-bottom: 10px;
+    color: #ff4d00;
+}
+
+.tags span {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ff4d00;
+    font-size: 14px;
+}
+
+/* HIGHLIGHTS SECTION */
+.highlights {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* VIDEO & IMAGE BOX */
+.highlight-box {
+    flex: 1;
+    border: 1px solid #222;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255,77,0,0.3);
+}
+
+/* VIDEO */
+.highlight-box video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* IMAGE */
+.highlight-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        padding: 25px;
+    }
+
+    .project-title {
+        font-size: 28px;
+    }
+
+    .highlights {
+        flex-direction: column;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- TITLE -->
+<h1 class="project-title">SMART ENERGY METER</h1>
+
+<!-- OVERVIEW -->
+<h2 class="section-heading">Overview</h2>
+<p class="text">
+This project was developed to monitor and control electricity usage using a prepaid system. It is built using Arduino and a GSM module to track real-time energy consumption of a household.
+
+The system maintains a prepaid balance and sends SMS alerts when the balance is low. When the balance reaches zero, it automatically disconnects the power supply. This helps users manage electricity usage efficiently and avoid overconsumption.
+</p>
+
+<!-- TECHNOLOGIES -->
+<h2 class="section-heading">Tech Stack & Tools:</h2>
+
+<div class="tech-section">
+
+    <div class="tech-category">
+        <h4>Hardware:</h4>
+        <div class="tags">
+            <span>Arduino UNO</span>
+            <span>GSM Module</span>
+            <span>Relay Module (5V)</span>
+            <span>Energy Meter</span>
+            <span>Power Supply</span>
+        </div>
+    </div>
+
+    <div class="tech-category">
+        <h4>Technologies:</h4>
+        <div class="tags">
+            <span>Arduino IDE</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- PROJECT DETAILS -->
+<h2 class="section-heading">Project Details</h2>
+<p class="text">
+In this project, the energy meter generates pulses based on the electricity consumed. These pulses are read by the Arduino, which calculates the total units used. Based on this consumption, the prepaid balance is reduced step by step.
+
+The GSM module is used to communicate with the user through SMS. When the balance becomes low, the system automatically sends a message to inform the user. This helps the user recharge before the electricity gets disconnected.
+
+If the balance reaches zero, the Arduino sends a signal to the relay module. The relay then turns off the power supply, effectively disconnecting electricity to prevent further usage without recharge.
+
+The system also supports recharge through SMS. When the user sends a recharge message, the GSM module receives it and passes it to the Arduino. The Arduino then updates the balance accordingly and resumes normal operation.
+
+This project shows how basic hardware components can be combined to build a useful system for monitoring and controlling electricity usage in daily life.
+</p>
+
+<!-- HIGHLIGHTS -->
+<h2 class="section-heading">Project Highlights</h2>
+
+<div class="highlights">
+
+    <div class="highlight-box">
+        <video controls>
+            <source src="Project/Proj1_Video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="highlight-box">
+        <img src="Project/Proj1_Image.jpeg" alt="Project Image">
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>

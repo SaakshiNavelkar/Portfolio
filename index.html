@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saakshi Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#certificates" class="nav-link">Certificates</a>
+    <a href="#contact" class="nav-link">Contact</a>
+</nav>
+
+<section id="home" class="home">
+    <div class="home-left">
+        <h3 class="section-sub">HELLO!</h3>
+        <h1>I'm <span class="name">SAAKSHI NAVELKAR</span></h1>
+
+        <h4 class="career-title">Career Objective</h4>
+
+        <p class="career-text">
+            Aspiring to work in a growth-oriented environment where I can apply my technical skills, learn from real-world projects, and contribute effectively to organizational growth.
+        </p>
+    </div>
+
+    <div class="home-right">
+        <div class="glow-circle">
+            <img src="Profile.jpeg">
+        </div>
+    </div>
+</section>
+
+<section id="education" class="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-item box">
+        <div class="left">
+            <h3>Bachelor of Engineering in Electronics and Communication</h3>
+            <p>Shri Madhwa Vadiraja Institute of Technology and Management, Udupi</p>
+            <p>CGPA : 7.95</p>
+        </div>
+        <div class="right">Dec 2022- May 2026</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="edu-item box">
+        <div class="left">
+            <h3>Pre – University</h3>
+            <p>SVH PU College, Innanje</p>
+            <p>Percentage : 86%</p>
+        </div>
+        <div class="right">2022</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="edu-item box">
+        <div class="left">
+            <h3>Secondary</h3>
+            <p>SVH English Medium High School Innanje</p>
+            <p>Percentage : 85.12%</p>
+        </div>
+        <div class="right">2020</div>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skill-box box">
+        <h3>Technical Skills</h3>
+        <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>C</span>
+            <span>Python</span>
+        </div>
+    </div>
+
+    <div class="skill-box box">
+        <h3>Tools</h3>
+        <div class="tags">
+            <span>Visual Studio Code</span>
+            <span>Git</span>
+            <span>Github</span>
+            <span>Arduino IDE</span>
+        </div>
+    </div>
+
+    <div class="skill-box box">
+        <h3>Soft Skills</h3>
+        <div class="tags">
+            <span>Team player</span>
+            <span>Time Management</span>
+            <span>Active Listener</span>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card box" onclick="location.href='project1.html'">
+        <div>
+            <h3>SMART ENERGY METER</h3>
+            <p class="small">
+                An IoT-based system using Arduino and GSM for real-time energy monitoring and prepaid billing. Sends alerts for low balance and automatically cuts power, ensuring efficient usage and preventing theft.
+            </p>
+        </div>
+        <span class="arrow">→</span>
+    </div>
+
+    <div class="project-card box" onclick="location.href='project2.html'">
+        <div>
+            <h3>IOT BASED WATER MANAGEMENT SOLUTION</h3>
+            <p class="small">
+                An automated system that controls water distribution between tanks based on water levels. Logs data to Google Sheets for monitoring, reducing manual effort and improving water efficiency.
+            </p>
+        </div>
+        <span class="arrow">→</span>
+    </div>
+
+    <div class="project-card box" onclick="location.href='project3.html'">
+        <div>
+            <h3>REAL-TIME POLLUTION MONITORING AND VISUALIZATION DASHBOARD</h3>
+            <p class="small">
+                An IoT system using Raspberry Pi and sensors to monitor air quality, water purity, and noise levels in real time. Displays live sensor data through an interactive web dashboard for easy monitoring.
+            </p>
+        </div>
+        <span class="arrow">→</span>
+    </div>
+
+    <div class="project-card box" onclick="location.href='project4.html'" >
+        <div>
+            <h3>AI TRAVEL PLANNER</h3>
+            <p class="small">
+                A web app that creates personalized travel plans based on user inputs like destination, budget, and duration. Uses AI to give real-time recommendations, making trip planning quick and easy.
+            </p>
+            <a href="https://saakshinavelkar.github.io/AI-Travel-Planner/" target="_blank" class="small-btn" onclick="event.stopPropagation()">Live Demo</a>
+        </div>
+        <span class="arrow">→</span>
+    </div>
+
+</section>
+
+<section id="certificates" class="certificates">
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="cert-grid">
+        <div class="cert-card box">
+            <h3>Generative AI for Beginners – Udemy</h3>
+            <p class="small">Completed a course covering fundamental concepts of generative AI and its practical applications.</p>
+            <a href="certificates/cert1.pdf">View Certificate</a>
+        </div>
+
+        <div class="cert-card box">
+            <h3>Learn C Programming – CodeChef</h3>
+            <p class="small">Completed a beginner-level course focused on fundamental concepts and hands-on coding in C.</p>
+            <a href="certificates/cert2.pdf">View Certificate</a>
+        </div>
+
+        <div class="cert-card box">
+            <h3>Python Course for Beginners – Scaler Topics</h3>
+            <p class="small">Gained practical experience in Python by solving beginner-level problems and coding exercises.</p>
+            <a href="certificates/cert3.pdf">View Certificate</a>
+        </div>
+
+        <div class="cert-card box">
+            <h3>Fundamentals of Software Testing – Udemy</h3>
+            <p class="small">Developed knowledge of testing concepts, testing approaches, and overall software testing workflow.</p>
+            <a href="certificates/cert4.pdf">View Certificate</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-grid">
+
+        <div class="contact-card box">
+            <h3>Email</h3>
+            <a href="mailto:saakshinavelkar26@gmail.com">
+                saakshinavelkar26@gmail.com
+            </a>
+        </div>
+
+        <div class="contact-card box">
+            <h3>Phone</h3>
+            <a href="tel:7022575648">
+                7022575648
+            </a>
+        </div>
+
+        <div class="contact-card box">
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/saakshi-navelkar-9a1103335" target="_blank">
+                linkedin.com/in/saakshi-navelkar-9a1103335
+            </a>
+        </div>
+
+        <div class="contact-card box">
+            <h3>GitHub</h3>
+            <a href="https://github.com/SaakshiNavelkar" target="_blank">
+                github.com/SaakshiNavelkar
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

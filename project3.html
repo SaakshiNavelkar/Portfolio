@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real-Time Pollution Monitoring</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TITLE */
+.project-title {
+    text-align: center;
+    font-size: 40px;
+    color: #ff4d00;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(255,77,0,0.6);
+}
+
+/* SECTION HEADINGS */
+.section-heading {
+    color: #ff4d00;
+    font-size: 22px;
+    margin: 30px 0 15px;
+    text-shadow: 0 0 6px rgba(255,77,0,0.5);
+}
+
+/* TEXT */
+.text {
+    color: #ccc;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* TECHNOLOGY TAGS */
+.tech-section {
+    margin-top: 20px;
+}
+
+.tech-category {
+    margin-bottom: 15px;
+}
+
+.tech-category h4 {
+    margin-bottom: 10px;
+    color: #ff4d00;
+}
+
+.tags span {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ff4d00;
+    font-size: 14px;
+}
+
+/* HIGHLIGHTS (SIDE BY SIDE) */
+.highlights {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.highlight-box {
+    flex: 1;
+    border: 1px solid #222;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(255,77,0,0.35);
+}
+
+.highlight-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        padding: 25px;
+    }
+
+    .project-title {
+        font-size: 28px;
+    }
+
+    .highlights {
+        flex-direction: column;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- TITLE -->
+<h1 class="project-title">Real-Time Pollution Monitoring and Visualization Dashboard</h1>
+
+<!-- OVERVIEW -->
+<h2 class="section-heading">Overview</h2>
+<p class="text">
+This project was developed to monitor environmental conditions such as air quality, water quality, and noise levels in real time using an IoT-based system. The main focus of the project is to display live data through a web dashboard, making it easy to understand and track environmental changes.
+
+The system collects data from different sensors and continuously updates it on a web interface. This helps users quickly identify whether the environment is safe or polluted and take necessary actions.
+</p>
+
+<!-- TECHNOLOGIES -->
+<h2 class="section-heading">Tech Stack & Tools:</h2>
+
+<div class="tech-section">
+
+    <div class="tech-category">
+        <h4>Hardware:</h4>
+        <div class="tags">
+            <span>Raspberry Pi</span>
+            <span>Air Quality Sensor (MQ135)</span>
+            <span>Water TDS Sensor</span>
+            <span>Noise Sensor (KY-037)</span>
+            <span>ADC Module (MCP3008)</span>
+        </div>
+    </div>
+
+    <div class="tech-category">
+        <h4>Technologies:</h4>
+        <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Python</span>
+            <span>VS Code</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- PROJECT DETAILS -->
+<h2 class="section-heading">Project Details</h2>
+<p class="text">
+In this project, different sensors are used to measure environmental parameters. The MQ135 sensor detects air quality, the TDS sensor measures water purity, and the sound sensor measures noise levels. Since these sensors give analog output, an ADC module is used to convert the signals into digital values that can be processed by the Raspberry Pi.
+
+The Raspberry Pi acts as the main processing unit. It reads the sensor values, processes them, and sends the data to the backend server at regular intervals. The data is then stored in a database and displayed on a web dashboard.
+
+The web dashboard shows real-time values of air quality, water quality, and noise levels. It also includes a visual scale with color indicators, which helps users easily understand whether the values are in a safe range or not. This makes the system simple and user-friendly.
+
+The system also maintains stored data, which is used to show trends and daily average values. A machine learning model is used in the background to generate prediction values, which are displayed along with the live data.
+
+This project shows how real-time data from multiple sensors can be collected, processed, and displayed through a web application to monitor environmental conditions effectively.
+</p>
+
+<!-- HIGHLIGHTS -->
+<h2 class="section-heading">Project Highlights</h2>
+
+<div class="highlights">
+
+    <!-- IMAGE 1 -->
+    <div class="highlight-box">
+        <img src="Project/Proj3_Image1.jpeg" alt="Dashboard View">
+    </div>
+
+    <!-- IMAGE 2 -->
+    <div class="highlight-box">
+        <img src="Project/Proj3_Image2.jpeg" alt="Sensor Setup">
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
